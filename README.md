@@ -10,4 +10,4 @@ Using the MechArm 270 robotic arm from Elephant Robotics, this report describes 
 
 e-Portfolio Link: https://portfolium.com/entry/iot-enabled-robotic-arm-automation 
 
-YouTube Link : 
+YouTube Link : [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/VrjjGQqLux8?list=PLwkWzSiLiMNlo-KuoToiq5iVWYRGkxJHT.jpg)](https://www.youtube.com/watch?v=VrjjGQqLux8?list=PLwkWzSiLiMNlo-KuoToiq5iVWYRGkxJHT)
