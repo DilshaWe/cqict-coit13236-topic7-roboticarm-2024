@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "definitions": {
+    "sessionToken": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{24}$"
+    },
+    "target": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}_[A-Z]{2}_\\d{2}$"
+    },
+    "positionArray": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 180
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "statusEnum": {
+      "type": "string",
+      "enum": ["success", "error", "busy", "timeout", "session_begin"]
+    }
+  },
+  "properties": {
+    "status": {
+      "$ref": "#/definitions/statusEnum"
+    },
+    "action": {
+      "type": "string",
+      "enum": ["move_to_pickup", "verify_item_position", "move_to_dropoff", "begin_session", "timeout_session"]
+    },
+    "session_token": {
+      "$ref": "#/definitions/sessionToken"
+    },
+    "target": {
+      "$ref": "#/definitions/target"
+    },
+    "message": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "details": {
+      "type": "object",
+      "properties": {
+        "position": {
+          "$ref": "#/definitions/positionArray"
+        },
+        "object": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": ["status", "session_token", "target", "timestamp"]
+}
