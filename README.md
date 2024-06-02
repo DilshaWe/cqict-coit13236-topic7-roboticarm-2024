@@ -8,10 +8,8 @@ Members:
 
 Using the MechArm 270 robotic arm from Elephant Robotics, this report describes a proposal for an IoT-Enabled Robotic Arm Automation Project. The project addresses certain tasks in industrial settings by integrating IoT technology for remote control and monitoring. A thorough system model must be designed, the business challenge must be analysed, technical requirements must be specified, and current solutions. Additionally, the report provides an evolution of the system, highlighting architectural refinements like the addition of the AWS MQTT Broker and MechArm Host to enable smooth bidirectional communication. In response to changing project needs, variations in the solution—such as modifications to the logical and physical network designs—are investigated. Moreover, improved risk mitigation techniques, revised technical specs, and implementation insights are offered.  Roles and duties, budgeting, and risk assessment are also covered in the report, indicating that the team is prepared to complete the project effectively.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/VrjjGQqLux8?list=PLwkWzSiLiMNlo-KuoToiq5iVWYRGkxJHT.jpg)](https://www.youtube.com/VrjjGQqLux8?list=PLwkWzSiLiMNlo-KuoToiq5iVWYRGkxJHT)
-
 ![Design](https://github.com/DilshaWe/cqict-coit13236-topic7-roboticarm-2024/assets/105036371/924d6664-8df1-42fd-96c6-7d5b9fb88a90)
 
 e-Portfolio Link: https://portfolium.com/entry/iot-enabled-robotic-arm-automation 
 
-YouTube Link : [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/VrjjGQqLux8?list=PLwkWzSiLiMNlo-KuoToiq5iVWYRGkxJHT.jpg)](https://www.youtube.com/watch?v=VrjjGQqLux8?list=PLwkWzSiLiMNlo-KuoToiq5iVWYRGkxJHT)
+YouTube Link : https://www.youtube.com/watch?v=VrjjGQqLux8?list=PLwkWzSiLiMNlo-KuoToiq5iVWYRGkxJHT
