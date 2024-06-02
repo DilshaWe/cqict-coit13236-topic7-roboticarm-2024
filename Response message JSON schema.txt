@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "response_type": {
+      "type": "string",
+      "enum": ["action_response", "session_response", "error_response"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["success", "error", "busy", "timeout"]
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": ["move_to_pickup", "verify_item_position", "move_to_dropoff"]
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "target": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}_[A-Z]{2}_\\d{2}$"
+        }
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["response_type", "status", "session_id", "timestamp"],
+  "additionalProperties": false
+}
